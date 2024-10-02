@@ -17,7 +17,7 @@ plugins:
 
 # GitHub Pages settings
 profile:
-  username: ${{ github.repository_owner }} 
+  username: "Ashhad"
   repository: yourusername.github.io
 
 # Exclude files from build
