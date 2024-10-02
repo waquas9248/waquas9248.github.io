@@ -3,46 +3,109 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #121212; /* dark background */
+    color: #f1f1f1; /* light text for contrast */
 }
 
+/* Header */
 header {
-    background: #333;
+    background-color: #000; /* pure black */
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #dc3545; /* red underline */
 }
 
 header h1 {
+    color: #dc3545; /* red text */
     margin: 0;
 }
 
-nav ul {
+/* Main content */
+main {
+    padding: 20px;
+    background-color: #1c1c1c; /* slightly lighter black */
+    border-radius: 8px;
+}
+
+/* Sections */
+h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #dc3545; /* red headings */
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+/* About Me Image */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #dc3545; /* red border */
+}
+
+/* List Styling */
+ul {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 15px;
+ul li {
+    background: #222; /* dark gray for contrast */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border-left: 5px solid #dc3545; /* red accent */
 }
 
-nav ul li a {
+/* Education and Experience Sections */
+.education, .experience {
+    border-left: 5px solid #dc3545; /* red accent on left border */
+    padding-left: 15px;
+    margin-bottom: 20px;
+    background-color: #222; /* dark gray */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #dc3545; /* red subheadings */
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    padding: 15px;
+    background: #222; /* dark gray */
+    border-radius: 5px;
+    border: 1px solid #dc3545; /* red border */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* pure black */
     color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #dc3545; /* red top border */
+}
+
+/* Link Styling */
+a {
+    color: #dc3545; /* red links */
     text-decoration: none;
 }
 
-nav ul li a:hover {
+a:hover {
     text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
 }

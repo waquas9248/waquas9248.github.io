@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
 </head>
 <body>
-    <header>
-        <h1>{{ site.title }}</h1>
-        <nav>
-            <!-- Example Navigation -->
-            <ul>
-                <li><a href="{{ "/" | relative_url }}">Home</a></li>
-                <li><a href="{{ "/about" | relative_url }}">About</a></li>
-                <li><a href="{{ "/contact" | relative_url }}">Contact</a></li>
-            </ul>
-        </nav>
+    <!-- Header with black background and red highlights -->
+    <header class="bg-dark text-white p-4">
+        <div class="container">
+            <h1 class="text-uppercase text-danger">{{ site.title }}</h1>
+        </div>
     </header>
 
-    <main>
+    <!-- Main content container -->
+    <main class="container my-5">
         <!-- The content of index.md will be injected here -->
         {{ content }}
     </main>
 
-    <footer>
+    <!-- Footer with black background and red highlights -->
+    <footer class="bg-dark text-white text-center p-3">
         <p>© {{ site.title }} {{ site.time | date: "%Y" }}</p>
     </footer>
+
+    <!-- Bootstrap and Optional JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
