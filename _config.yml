@@ -1,5 +1,6 @@
 ---
 
+
 # Site settings
 
 title: Your Name
@@ -16,7 +17,7 @@ plugins:
 
 # GitHub Pages settings
 github:
-  username: yourusername
+  username: ${{ github.repository_owner }} 
   repository: yourusername.github.io
 
 # Exclude files from build
