@@ -24,3 +24,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+
+data:
+  about-me: about-me.yaml
