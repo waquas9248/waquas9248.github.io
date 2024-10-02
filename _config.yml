@@ -16,7 +16,7 @@ plugins:
   - jekyll-seo-tag
 
 # GitHub Pages settings
-github:
+profile:
   username: ${{ github.repository_owner }} 
   repository: yourusername.github.io
 
