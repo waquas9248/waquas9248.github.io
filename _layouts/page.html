@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-</head>
-<body>
-    <!-- Header with black background and red highlights -->
-    <header>
-        <div class="container">
-            <h1>{{ site.title }}</h1>
-        </div>
-    </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+        <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    </head>
+    <body>
+        <!-- Header with black background and red highlights -->
+        <header>
+            <div class="container">
+                <h1>{{ site.title }}</h1>
+            </div>
+        </header>
 
-    <!-- Main content container -->
-    <main class="container my-5">
-        <!-- The content of index.md will be injected here -->
-        {{ content }}
-    </main>
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                {{ page.about | markdownify }}
+            </section>
 
-    <!-- Footer with black background and red highlights -->
-    <footer>
-        <p>© {{ site.title }} {{ site.time | date: "%Y" }}</p>
-    </footer>
+            <!-- Interests Section -->
+            <section id="interests">
+                {{ page.interests | markdownify }}
+            </section>
 
-    <!-- Bootstrap and Optional JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+            <!-- Education Section -->
+            <section id="education">
+                {{ page.education | markdownify }}
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience">
+                {{ page.experience | markdownify }}
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills">
+                {{ page.skills | markdownify }}
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                {{ page.contact | markdownify }}
+            </section>
+        </main>
+
+        <!-- Footer with black background and red highlights -->
+        <footer>
+            <p>© {{ site.title }} {{ site.time | date: "%Y" }}</p>
+        </footer>
+
+        <!-- Bootstrap and Optional JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </body>
 </html>
