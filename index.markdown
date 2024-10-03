@@ -5,12 +5,6 @@ title: Home
 permalink: /
 ---
 
-# My Portfolio
-
-Welcome to my portfolio! Below you will find information about me, my interests, education, and experience.
-
----
-
 ## About Me
 <!-- Provide a brief introduction about yourself. Replace the placeholder text with your own content. -->
 Hello! My name is **[Your Name]**. I am passionate about **[Your Passions]** and enjoy working on projects related to **[Your Areas of Expertise]**. I'm always looking for opportunities to grow and share my skills with others.
