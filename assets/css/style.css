@@ -1,7 +1,7 @@
 /* Reset */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif; /* Body font */
     line-height: 1.6;
     background-color: #000000; /* Granite Black */
     color: #FFFFFF; /* Blizzard White */
@@ -14,6 +14,7 @@ header {
     padding: 20px;
     text-align: center;
     border-bottom: 4px solid #CD1041; /* Spirit Red underline */
+    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
 }
 
 header h1 {
@@ -29,9 +30,14 @@ main {
     border-radius: 8px;
     max-width: 1200px;
     margin: 0 auto;
+    font-family: 'Roboto', sans-serif; /* Body font */
 }
 
 /* Sections */
+h2, h3 {
+    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
+}
+
 h2 {
     margin-top: 40px;
     margin-bottom: 20px;
@@ -41,10 +47,19 @@ h2 {
     font-size: 2em;
 }
 
+h3 {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #CD1041; /* Spirit Red subheadings */
+    font-size: 1.5em;
+}
+
 p {
     margin-bottom: 20px;
     font-size: 1.2em;
     color: #E1E1E1; /* Light gray for readability */
+    font-family: 'Roboto', sans-serif; /* Body font */
 }
 
 /* About Me Image */
@@ -70,6 +85,7 @@ ul li {
     font-size: 1.1em;
     border-left: 8px solid #CD1041; /* Spirit Red accent */
     color: #FFFFFF;
+    font-family: 'Roboto', sans-serif; /* Body font */
 }
 
 /* Education and Experience Sections */
@@ -83,12 +99,8 @@ ul li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
-h3 {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #CD1041; /* Spirit Red subheadings */
-    font-size: 1.5em;
+.education h3, .experience h3 {
+    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
 }
 
 /* Contact Info */
@@ -99,6 +111,7 @@ h3 {
     border-radius: 8px;
     border: 2px solid #CD1041; /* Spirit Red border */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+    font-family: 'Roboto', sans-serif; /* Body font */
 }
 
 /* Footer */
@@ -116,6 +129,7 @@ a {
     color: #CD1041; /* Spirit Red links */
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
 }
 
 a:hover {
@@ -131,6 +145,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1em;
+    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Button font */
 }
 
 button:hover {
