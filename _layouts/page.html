@@ -18,8 +18,7 @@
             </div>
         </header>
 
-        <main>
-
+        <div class="container">
             <div class="sidebar sticky">
                 <div itemscope itemtype="http://schema.org/Person">
                     <!-- Avatar Section -->
@@ -47,38 +46,43 @@
                     </div>
                 </div>
             </div>
-              
 
-            <!-- About Section -->
-            <section id="about">
-                {{ page.about | markdownify }}
-            </section>
+            <main>
 
-            <!-- Interests Section -->
-            <section id="interests">
-                {{ page.interests | markdownify }}
-            </section>
+                <!-- About Section -->
+                <section id="about">
+                    {{ page.about | markdownify }}
+                </section>
+    
+                <!-- Interests Section -->
+                <section id="interests">
+                    {{ page.interests | markdownify }}
+                </section>
+    
+                <!-- Education Section -->
+                <section id="education">
+                    {{ page.education | markdownify }}
+                </section>
+    
+                <!-- Experience Section -->
+                <section id="experience">
+                    {{ page.experience | markdownify }}
+                </section>
+    
+                <!-- Skills Section -->
+                <section id="skills">
+                    {{ page.skills | markdownify }}
+                </section>
+    
+                <!-- Contact Section -->
+                <section id="contact">
+                    {{ page.contact | markdownify }}
+                </section>
+                
+            </main>
 
-            <!-- Education Section -->
-            <section id="education">
-                {{ page.education | markdownify }}
-            </section>
-
-            <!-- Experience Section -->
-            <section id="experience">
-                {{ page.experience | markdownify }}
-            </section>
-
-            <!-- Skills Section -->
-            <section id="skills">
-                {{ page.skills | markdownify }}
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact">
-                {{ page.contact | markdownify }}
-            </section>
-        </main>
+        </div>
+        
 
         <!-- Footer with black background and red highlights -->
         <footer>

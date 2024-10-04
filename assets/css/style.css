@@ -7,6 +7,12 @@ body {
     color: #FFFFFF; /* Blizzard White */
 }
 
+.container {
+  display: flex; /* Enable flexbox */
+  align-items: flex-start; /* Align items to the top */
+}
+
+
 /* Header */
 header {
     background-color: #000000; /* Granite Black */
@@ -23,15 +29,33 @@ header h1 {
     font-size: 2.5em;
 }
 
-/* Main content */
-main {
-    padding: 40px;
-    background-color: #CD1041; /* Spirit Red headings */
-    border-radius: 8px;
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: 'Roboto', sans-serif; /* Body font */
+/* sidebar and main containers*/
+
+.sidebar {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* Blizzard White text */
+  padding: 20px;
+  width: 300px; /* Fixed width */
+  position: sticky;
+  top: 0; /* Makes the sidebar sticky */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
 }
+
+main {
+  flex-grow: 1; /* Main content takes remaining space */
+  padding: 40px;
+  background-color: #CD1041; /* Spirit Red headings */
+  border-radius: 8px;
+  margin-left: 20px; /* Space between sidebar and main content */
+  font-family: 'Roboto', sans-serif; /* Body font */
+  max-width: calc(100% - 320px); /* Account for sidebar width and margin */
+  overflow-x: hidden; /* Hide any horizontal overflow */
+    
+}
+
 
 /* Sections */
 h2, h3 {
@@ -88,19 +112,6 @@ ul li {
     font-family: 'Roboto', sans-serif; /* Body font */
 }
 
-
-/* Sidebar container */
-.sidebar {
-  background-color: #000000; /* Black background */
-  color: #FFFFFF; /* Blizzard White text */
-  padding: 20px;
-  width: 250px; /* Adjust width as necessary */
-  position: sticky;
-  top: 0; /* Makes the sidebar sticky */
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-}
 
 /* Avatar styling */
 .author__avatar img {
