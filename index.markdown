@@ -2,6 +2,9 @@
 layout: page
 title: Home
 permalink: /
+name: |
+  Ashhad Syed
+
 statement: |
   Computer Science - Masters
 
