@@ -291,16 +291,10 @@ section ul li {
 
 #education {
   background-color: #252525; /* Same as About for uniformity */
-  border-left: 8px solid #FF3B5C; /* Highlight with brighter red */
-  padding-left: 15px;
-  margin-bottom: 30px;
 }
 
 #experience {
   background-color: #2B2B2B; /* Darker for separation */
-  border-left: 8px solid #FF3B5C; /* Brighter Spirit Red accent */
-  padding-left: 15px;
-  margin-bottom: 30px;
 }
 
 #skills {
