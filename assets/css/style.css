@@ -76,23 +76,25 @@ align-items: flex-start; /* Align items to the top */
 /* Sidebar and Main Containers */
 .sidebar {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
-  background-color: #000000; /* Black background */
-  color: #FFFFFF; /* Blizzard White text */
+  flex-direction: column;
+  background-color: #000000;
+  color: #FFFFFF;
   padding: 20px;
-  width: 300px; /* Fixed width */
+  width: 300px;
   position: sticky;
-  top: 20px; /* Adds space from the top to separate from the header */
-  margin-bottom: 20px; /* Adds space at the bottom before the footer */
-  height: calc(100vh - 40px); /* Adjust height to fit within the viewport */
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  top: 20px;
+  margin-bottom: 20px;
+  height: calc(100vh - 40px); /* Sidebar will fill the viewport minus margin */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
 }
 
 /* Container within sidebar to grow and fit space */
 .sidebar > div {
-  flex-grow: 1; /* Allows content to expand to fill space */
-  overflow: hidden; /* Prevents overflow without scrolling */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column; /* Stack inner content vertically */
+  justify-content: space-between; /* Distribute space evenly */
 }
 
 
@@ -113,20 +115,22 @@ main {
 
 .author__avatar {
   display: flex; /* Enable flexbox */
+  flex: 1;
   justify-content: center; /* Center horizontally */
 }
 
 /* Avatar styling */
 .author__avatar img {
-border-radius: 50%;
-width: 100px;
-height: auto;
-margin-bottom: 15px;
-border: 3px solid #CD1041; /* Spirit Red border */
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  border: 3px solid #CD1041; /* Spirit Red border */
 }
 
 .author__content {
   text-align: center;
+  flex-shrink: 1;
 }
 
 /* Content styling */
@@ -161,17 +165,26 @@ font-size: 1em;
 background-color: #A30E35; /* Darker red on hover */
 }
 
+/* Links Section */
+.author__urls-wrapper {
+  flex-grow: 1; /* Allow links section to take up remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Space out items */
+}
 /* Links and Icons Styling */
 .author__urls-wrapper ul {
-list-style: none;
-padding: 0;
-margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
 }
 
 .author__urls-wrapper li {
-margin-bottom: 10px;
-font-size: 1em;
-color: #FFFFFF; /* White text for readability */
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #FFFFFF; /* White text for readability */
+  flex-shrink: 1;
 }
 
 .author__urls-wrapper a {
