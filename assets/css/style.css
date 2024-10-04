@@ -100,6 +100,12 @@ main {
  
 
 /* Sidebar Internal Elements */
+
+.author__avatar {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+}
+
 /* Avatar styling */
 .author__avatar img {
 border-radius: 50%;
