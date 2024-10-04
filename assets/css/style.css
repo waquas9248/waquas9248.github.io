@@ -75,6 +75,8 @@ align-items: flex-start; /* Align items to the top */
 
 /* Sidebar and Main Containers */
 .sidebar {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
   background-color: #000000; /* Black background */
   color: #FFFFFF; /* Blizzard White text */
   padding: 20px;
@@ -82,11 +84,17 @@ align-items: flex-start; /* Align items to the top */
   position: sticky;
   top: 20px; /* Adds space from the top to separate from the header */
   margin-bottom: 20px; /* Adds space at the bottom before the footer */
-  height: calc(100vh - 40px); /* Adjust height to fit within the viewport, accounting for the top and bottom margin */
-  overflow-y: hidden; /* Remove scrolling, fit to content */
+  height: calc(100vh - 40px); /* Adjust height to fit within the viewport */
   box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
   flex-shrink: 0; /* Prevents the sidebar from shrinking */
 }
+
+/* Container within sidebar to grow and fit space */
+.sidebar > div {
+  flex-grow: 1; /* Allows content to expand to fill space */
+  overflow: hidden; /* Prevents overflow without scrolling */
+}
+
 
 main {
   flex-grow: 1; /* Main content takes remaining space */
@@ -117,13 +125,16 @@ margin-bottom: 15px;
 border: 3px solid #CD1041; /* Spirit Red border */
 }
 
+.author__content {
+  text-align: center;
+}
+
 /* Content styling */
 .author__content h3 {
 font-size: 1.5em;
 margin: 0;
 color: #FF3B5C; /* Brighter red for better contrast */
 font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Font for titles */
-text-align: center; 
 }
 
 .author__content p {
@@ -238,17 +249,6 @@ ul li {
 
 .education h3, .experience h3 {
   font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
-}
-
-/* Contact Info */
-.contact-info {
-  margin-top: 30px;
-  padding: 20px;
-  background: #2B2B2B; /* Dark gray */
-  border-radius: 8px;
-  border: 2px solid #CD1041; /* Spirit Red border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
-  font-family: 'Roboto', sans-serif; /* Body font */
 }
 
 /* Section Specific Styles */
