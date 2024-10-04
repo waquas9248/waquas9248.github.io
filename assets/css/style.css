@@ -42,8 +42,9 @@ align-items: flex-start; /* Align items to the top */
 
 /* Page title centered */
 .page-title {
-  flex: 2;
-  text-align: center;
+  position: absolute; /* Position it absolutely within the header */
+  left: 50%; /* Start from the middle */
+  transform: translateX(-50%); /* Center by shifting left by 50% of its width */
   color: #FFFFFF; /* Blizzard White */
   font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
 }

@@ -63,5 +63,4 @@ skills: |
   - **Frameworks and Libraries**: [e.g., React, Node.js, Django]
   - **Soft Skills**: [e.g., Teamwork, Problem-solving, Time management]
 
-  Thank you for visiting my portfolio!
 ---
