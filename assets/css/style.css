@@ -305,12 +305,6 @@ section ul li {
   background-color: #252525; /* Light Granite Black for visibility */
 }
 
-#contact {
-  background-color: #333333; /* Dark contrast */
-  border: 2px solid #FF3B5C; /* Bright border for emphasis */
-  padding: 20px;
-}
-
 /* Footer */
 footer {
   background-color: #000000; /* Granite Black */

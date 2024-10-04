@@ -57,12 +57,5 @@ skills: |
   - **Frameworks and Libraries**: [e.g., React, Node.js, Django]
   - **Soft Skills**: [e.g., Teamwork, Problem-solving, Time management]
 
-contact: |
-  ## Contact
-  <!-- Provide your contact details here. Replace the placeholder text with your own content. -->
-  - **Email**: [your.email@example.com]
-  - **LinkedIn**: [LinkedIn Profile URL]
-  - **GitHub**: [GitHub Profile URL]
-
   Thank you for visiting my portfolio!
 ---
