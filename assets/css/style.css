@@ -14,20 +14,61 @@ align-items: flex-start; /* Align items to the top */
 }
 
 /* Header */
-header {
+/* Header Container */
+.site-header {
   background-color: #000000; /* Granite Black */
-  color: #FFFFFF; /* Blizzard White */
   padding: 20px;
-  text-align: center;
   border-bottom: 4px solid #000000; /* Granite Black */
+}
+
+/* Flex container for header content */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between logo, title, and nav */
+  max-width: 1200px; /* Center content within header */
+  margin: 0 auto;
+}
+
+/* Logo Styling */
+.logo {
+  flex: 1;
+}
+
+.logo img {
+  height: 50px; /* Adjust as needed */
+}
+
+/* Page title centered */
+.page-title {
+  flex: 2;
+  text-align: center;
+  color: #FFFFFF; /* Blizzard White */
   font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
 }
 
-header h1 {
-  color: #FFFFFF; /* Blizzard White */
+.page-title h1 {
   margin: 0;
   font-size: 2.5em;
 }
+
+/* Navigation links */
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+.nav-links a {
+  margin-left: 20px; /* Space between links */
+  color: #FFFFFF; /* Blizzard White */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
 
 /* Sidebar and Main Containers */
 .sidebar {
@@ -52,7 +93,7 @@ main {
   font-family: 'Roboto', sans-serif; /* Body font */
   max-width: calc(100% - 320px); /* Account for sidebar width and margin */
   overflow-x: hidden; /* Hide any horizontal overflow */
-  }
+}
  
 
 /* Sidebar Internal Elements */
