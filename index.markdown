@@ -2,7 +2,7 @@
 layout: page
 title: Home
 permalink: /
-name: |
+friendlyname: |
   Ashhad Syed
 
 statement: |
