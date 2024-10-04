@@ -3,9 +3,10 @@ body {
   margin: 0;
   font-family: 'Roboto', sans-serif; /* Body font */
   line-height: 1.6;
-  background-color: transparent; /* Spirit Red headings */
+  background-color: #CD1041; /* Spirit Red headings */
   color: #FFFFFF; /* Blizzard White */
 }
+
 
 .container {
 display: flex; /* Enable flexbox */
@@ -45,16 +46,14 @@ flex-shrink: 0; /* Prevents the sidebar from shrinking */
 main {
   flex-grow: 1; /* Main content takes remaining space */
   padding: 40px;
-  background: url('https://www.stcloudstate.edu/_files/images/launch/stats_river_1489x837.png') no-repeat center center / cover; /* Add image and cover */
-  background-color: transparent;
-  color: #FFFFFF; /* Text color for contrast */
+  background-color: #CD1041; /* Spirit Red headings */
   border-radius: 8px;
   margin-left: 20px; /* Space between sidebar and main content */
   font-family: 'Roboto', sans-serif; /* Body font */
   max-width: calc(100% - 320px); /* Account for sidebar width and margin */
   overflow-x: hidden; /* Hide any horizontal overflow */
-}
-
+  }
+ 
 
 /* Sidebar Internal Elements */
 /* Avatar styling */
