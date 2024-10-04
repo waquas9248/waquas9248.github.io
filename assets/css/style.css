@@ -13,11 +13,12 @@ display: flex; /* Enable flexbox */
 align-items: flex-start; /* Align items to the top */
 }
 
+
 /* Header */
 /* Header Container */
 .site-header {
   background-color: #000000; /* Granite Black */
-  padding: 20px;
+  padding: 15px 20px; /* Slightly reduce padding for better balance */
   border-bottom: 4px solid #000000; /* Granite Black */
 }
 
@@ -25,18 +26,18 @@ align-items: flex-start; /* Align items to the top */
 .header-content {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Space between logo, title, and nav */
-  max-width: 1200px; /* Center content within header */
+  justify-content: space-between;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 /* Logo Styling */
 .logo {
-  flex: 1;
+  flex: 0.5; /* Reduced flex to make the logo less prominent */
 }
 
 .logo img {
-  height: 50px; /* Adjust as needed */
+  height: 35px; /* Reduced size */
 }
 
 /* Page title centered */
@@ -49,12 +50,13 @@ align-items: flex-start; /* Align items to the top */
 
 .page-title h1 {
   margin: 0;
-  font-size: 2.5em;
+  font-size: 2em; /* Increased size to make the title more prominent */
+  font-weight: bold; /* Emphasize title */
 }
 
 /* Navigation links */
 .nav-links {
-  flex: 1;
+  flex: 1.2; /* Slightly increased space for the links */
   text-align: right;
 }
 
@@ -63,12 +65,12 @@ align-items: flex-start; /* Align items to the top */
   color: #FFFFFF; /* Blizzard White */
   text-decoration: none;
   font-weight: bold;
+  font-size: 1.2em; /* Increase font size */
 }
 
 .nav-links a:hover {
   text-decoration: underline;
 }
-
 
 /* Sidebar and Main Containers */
 .sidebar {

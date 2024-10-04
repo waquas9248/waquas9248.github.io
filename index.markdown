@@ -2,6 +2,9 @@
 layout: page
 title: Home
 permalink: /
+statement: |
+  Computer Science - Masters
+
 about: |
   ## About Me
   <!-- Provide a brief introduction about yourself. Replace the placeholder text with your own content. -->
