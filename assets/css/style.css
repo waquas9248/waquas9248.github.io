@@ -88,6 +88,91 @@ ul li {
     font-family: 'Roboto', sans-serif; /* Body font */
 }
 
+
+/* Sidebar container */
+.sidebar {
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* Blizzard White text */
+  padding: 20px;
+  width: 250px; /* Adjust width as necessary */
+  position: sticky;
+  top: 0; /* Makes the sidebar sticky */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+}
+
+/* Avatar styling */
+.author__avatar img {
+  border-radius: 50%;
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  border: 3px solid #CD1041; /* Spirit Red border */
+}
+
+/* Content styling */
+.author__content h3 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #FF3B5C; /* Brighter red for better contrast */
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Font for titles */
+}
+
+.author__content p {
+  margin-top: 10px;
+  font-size: 1em;
+  color: #E1E1E1; /* Light gray for better readability */
+  font-family: 'Roboto', sans-serif; /* Font for body text */
+}
+
+/* Button styling */
+.btn {
+  background-color: #CD1041; /* Spirit Red button */
+  color: #FFFFFF; /* White text */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #A30E35; /* Darker red on hover */
+}
+
+/* Links and Icons Styling */
+.author__urls-wrapper ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.author__urls-wrapper li {
+  margin-bottom: 10px;
+  font-size: 1em;
+  color: #FFFFFF; /* White text for readability */
+}
+
+.author__urls-wrapper a {
+  color: #FF3B5C; /* Brighter red for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.author__urls-wrapper a:hover {
+  text-decoration: underline;
+}
+
+/* Icon styling */
+.social-icons i {
+  margin-right: 10px;
+  color: #FF3B5C; /* Red icons */
+}
+
+
 /* Education and Experience Sections */
 .education, .experience {
     border-left: 8px solid #CD1041; /* Spirit Red accent */

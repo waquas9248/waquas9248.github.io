@@ -6,6 +6,8 @@
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+        <!-- FontAwesome for Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
     </head>
     <body>
@@ -17,6 +19,36 @@
         </header>
 
         <main>
+
+            <div class="sidebar sticky">
+                <div itemscope itemtype="http://schema.org/Person">
+                    <!-- Avatar Section -->
+                    <div class="author__avatar">
+                    <img src="https://scsuitguy.github.io/images/profile.png" alt="Your Sidebar Name">
+                    </div>
+                
+                    <!-- Content Section -->
+                    <div class="author__content">
+                    <h3 class="author__name">Your Sidebar Name</h3>
+                    <p class="author__bio">Your biography for the left-hand sidebar update 1</p>
+                    </div>
+                
+                    <!-- Links Section -->
+                    <div class="author__urls-wrapper">
+                    <button class="btn btn--inverse">Follow</button>
+                    <ul class="author__urls social-icons">
+                        <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> Location</li>
+                        <li><a href="https://twitter.com/replacethistwitterhandle"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+                        <li><a href="https://github.com/scsuitguy"><i class="fab fa-fw fa-github" aria-hidden="true"></i> Github</a></li>
+                        <li><a href="http://yourfullgooglescholarurl.com"><i class="fas fa-fw fa-graduation-cap"></i> Google Scholar</a></li>
+                        <li><a href="https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"><i class="ai ai-pubmed-square ai-fw"></i> PubMed</a></li>
+                        <li><a href="http://orcid.org/yourorcidurl"><i class="ai ai-orcid-square ai-fw"></i> ORCID</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+              
+
             <!-- About Section -->
             <section id="about">
                 {{ page.about | markdownify }}
