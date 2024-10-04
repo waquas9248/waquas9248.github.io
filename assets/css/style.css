@@ -1,329 +1,316 @@
-/* Reset */
+/* Reset and Layout */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif; /* Body font */
-    line-height: 1.6;
-    background-color: #CD1041; /* Spirit Red headings */
-    color: #FFFFFF; /* Blizzard White */
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Body font */
+  line-height: 1.6;
+  background-color: #CD1041; /* Spirit Red headings */
+  color: #FFFFFF; /* Blizzard White */
 }
 
 .container {
-  display: flex; /* Enable flexbox */
-  align-items: flex-start; /* Align items to the top */
+display: flex; /* Enable flexbox */
+align-items: flex-start; /* Align items to the top */
 }
-
 
 /* Header */
 header {
-    background-color: #000000; /* Granite Black */
-    color: #FFFFFF; /* Blizzard White */
-    padding: 20px;
-    text-align: center;
-    border-bottom: 4px solid #000000; /* Granite Black */
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
+  background-color: #000000; /* Granite Black */
+  color: #FFFFFF; /* Blizzard White */
+  padding: 20px;
+  text-align: center;
+  border-bottom: 4px solid #000000; /* Granite Black */
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
 }
 
 header h1 {
-    color: #FFFFFF; /* Blizzard White */
-    margin: 0;
-    font-size: 2.5em;
+  color: #FFFFFF; /* Blizzard White */
+  margin: 0;
+  font-size: 2.5em;
 }
 
-/* sidebar and main containers*/
-
+/* Sidebar and Main Containers */
 .sidebar {
-  background-color: #000000; /* Black background */
-  color: #FFFFFF; /* Blizzard White text */
-  padding: 20px;
-  width: 300px; /* Fixed width */
-  position: sticky;
-  top: 0; /* Makes the sidebar sticky */
-  height: 100vh; /* Full viewport height */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-  flex-shrink: 0; /* Prevents the sidebar from shrinking */
+background-color: #000000; /* Black background */
+color: #FFFFFF; /* Blizzard White text */
+padding: 20px;
+width: 300px; /* Fixed width */
+position: sticky;
+top: 0; /* Makes the sidebar sticky */
+height: 100vh; /* Full viewport height */
+overflow-y: auto; /* Enable scrolling if content overflows */
+box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+flex-shrink: 0; /* Prevents the sidebar from shrinking */
 }
 
 main {
-  flex-grow: 1; /* Main content takes remaining space */
-  padding: 40px;
-  background-color: #CD1041; /* Spirit Red headings */
-  border-radius: 8px;
-  margin-left: 20px; /* Space between sidebar and main content */
-  font-family: 'Roboto', sans-serif; /* Body font */
-  max-width: calc(100% - 320px); /* Account for sidebar width and margin */
-  overflow-x: hidden; /* Hide any horizontal overflow */
-    
+flex-grow: 1; /* Main content takes remaining space */
+padding: 40px;
+background-color: #CD1041; /* Spirit Red headings */
+border-radius: 8px;
+margin-left: 20px; /* Space between sidebar and main content */
+font-family: 'Roboto', sans-serif; /* Body font */
+max-width: calc(100% - 320px); /* Account for sidebar width and margin */
+overflow-x: hidden; /* Hide any horizontal overflow */
 }
 
-
-/* Sections */
-h2, h3 {
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
-}
-
-h2 {
-    margin-top: 40px;
-    margin-bottom: 20px;
-    text-align: center;
-    font-weight: bold;
-    color: #CD1041; /* Spirit Red headings */
-    font-size: 2em;
-}
-
-h3 {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    color: #CD1041; /* Spirit Red subheadings */
-    font-size: 1.5em;
-}
-
-p {
-    margin-bottom: 20px;
-    font-size: 1.2em;
-    color: #E1E1E1; /* Light gray for readability */
-    font-family: 'Roboto', sans-serif; /* Body font */
-}
-
-/* About Me Image */
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 50%;
-    border: 4px solid #CD1041; /* Spirit Red border */
-    margin-bottom: 20px;
-}
-
-/* List Styling */
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    background: #2B2B2B; /* Darker gray for contrast */
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.1em;
-    border-left: 8px solid #CD1041; /* Spirit Red accent */
-    color: #FFFFFF;
-    font-family: 'Roboto', sans-serif; /* Body font */
-}
-
-
+/* Sidebar Internal Elements */
 /* Avatar styling */
 .author__avatar img {
-  border-radius: 50%;
-  width: 100px;
-  height: auto;
-  margin-bottom: 15px;
-  border: 3px solid #CD1041; /* Spirit Red border */
+border-radius: 50%;
+width: 100px;
+height: auto;
+margin-bottom: 15px;
+border: 3px solid #CD1041; /* Spirit Red border */
 }
 
 /* Content styling */
 .author__content h3 {
-  font-size: 1.5em;
-  margin: 0;
-  color: #FF3B5C; /* Brighter red for better contrast */
-  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Font for titles */
+font-size: 1.5em;
+margin: 0;
+color: #FF3B5C; /* Brighter red for better contrast */
+font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Font for titles */
 }
 
 .author__content p {
-  margin-top: 10px;
-  font-size: 1em;
-  color: #E1E1E1; /* Light gray for better readability */
-  font-family: 'Roboto', sans-serif; /* Font for body text */
+margin-top: 10px;
+font-size: 1em;
+color: #E1E1E1; /* Light gray for better readability */
+font-family: 'Roboto', sans-serif; /* Font for body text */
 }
 
 /* Button styling */
 .btn {
-  background-color: #CD1041; /* Spirit Red button */
-  color: #FFFFFF; /* White text */
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  cursor: pointer;
-  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif;
-  font-size: 1em;
+background-color: #CD1041; /* Spirit Red button */
+color: #FFFFFF; /* White text */
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+margin-bottom: 15px;
+cursor: pointer;
+font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif;
+font-size: 1em;
 }
 
 .btn:hover {
-  background-color: #A30E35; /* Darker red on hover */
+background-color: #A30E35; /* Darker red on hover */
 }
 
 /* Links and Icons Styling */
 .author__urls-wrapper ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+list-style: none;
+padding: 0;
+margin: 0;
 }
 
 .author__urls-wrapper li {
-  margin-bottom: 10px;
-  font-size: 1em;
-  color: #FFFFFF; /* White text for readability */
+margin-bottom: 10px;
+font-size: 1em;
+color: #FFFFFF; /* White text for readability */
 }
 
 .author__urls-wrapper a {
-  color: #FF3B5C; /* Brighter red for links */
-  text-decoration: none;
-  font-weight: bold;
+color: #FF3B5C; /* Brighter red for links */
+text-decoration: none;
+font-weight: bold;
 }
 
 .author__urls-wrapper a:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 /* Icon styling */
 .social-icons i {
-  margin-right: 10px;
-  color: #FF3B5C; /* Red icons */
+margin-right: 10px;
+color: #FF3B5C; /* Red icons */
 }
 
+/* Main Content Styling */
+h2, h3 {
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
+}
+
+h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #CD1041; /* Spirit Red headings */
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #CD1041; /* Spirit Red subheadings */
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  color: #E1E1E1; /* Light gray for readability */
+  font-family: 'Roboto', sans-serif; /* Body font */
+}
+
+/* About Me Image */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 4px solid #CD1041; /* Spirit Red border */
+  margin-bottom: 20px;
+}
+
+/* List Styling */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #2B2B2B; /* Darker gray for contrast */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  border-left: 8px solid #CD1041; /* Spirit Red accent */
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif; /* Body font */
+}
 
 /* Education and Experience Sections */
 .education, .experience {
-    border-left: 8px solid #CD1041; /* Spirit Red accent */
-    padding-left: 15px;
-    margin-bottom: 30px;
-    background-color: #2B2B2B; /* Dark gray */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+  border-left: 8px solid #CD1041; /* Spirit Red accent */
+  padding-left: 15px;
+  margin-bottom: 30px;
+  background-color: #2B2B2B; /* Dark gray */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
 }
 
 .education h3, .experience h3 {
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
 }
 
 /* Contact Info */
 .contact-info {
-    margin-top: 30px;
-    padding: 20px;
-    background: #2B2B2B; /* Dark gray */
-    border-radius: 8px;
-    border: 2px solid #CD1041; /* Spirit Red border */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
-    font-family: 'Roboto', sans-serif; /* Body font */
+  margin-top: 30px;
+  padding: 20px;
+  background: #2B2B2B; /* Dark gray */
+  border-radius: 8px;
+  border: 2px solid #CD1041; /* Spirit Red border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  font-family: 'Roboto', sans-serif; /* Body font */
+}
+
+/* Section Specific Styles */
+/* General Styles for Section */
+section {
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  background-color: #1A1A1A; /* Contrast against body */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deep shadow for contrast */
+}
+
+section h2 {
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif;
+  color: #FF3B5C; /* Brighter shade of Spirit Red */
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+section p {
+  color: #E5E5E5; /* Lighter gray for readability */
+  font-size: 1.1em;
+  margin-bottom: 1.5rem;
+}
+
+section ul {
+  padding-left: 1.5rem;
+  color: #F2F2F2; /* Softer white */
+}
+
+section ul li {
+  background-color: #333333; /* Darker gray for contrast */
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 8px solid #FF3B5C; /* Brighter Spirit Red */
+  font-size: 1.1em;
+  color: #FFFFFF; /* Ensure text contrast */
+}
+
+#about {
+  background-color: #252525; /* Slightly lighter Granite Black */
+}
+
+#interests {
+  background-color: #2B2B2B; /* Dark gray for differentiation */
+}
+
+#education {
+  background-color: #252525; /* Same as About for uniformity */
+  border-left: 8px solid #FF3B5C; /* Highlight with brighter red */
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+#experience {
+  background-color: #2B2B2B; /* Darker for separation */
+  border-left: 8px solid #FF3B5C; /* Brighter Spirit Red accent */
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+
+#skills {
+  background-color: #252525; /* Light Granite Black for visibility */
+}
+
+#contact {
+  background-color: #333333; /* Dark contrast */
+  border: 2px solid #FF3B5C; /* Bright border for emphasis */
+  padding: 20px;
 }
 
 /* Footer */
 footer {
-    background-color: #000000; /* Granite Black */
-    color: #FFFFFF; /* Blizzard White */
-    text-align: center;
-    padding: 15px;
-    border-top: 4px solid #CD1041; /* Spirit Red top border */
-    font-size: 0.9em;
+  background-color: #000000; /* Granite Black */
+  color: #FFFFFF; /* Blizzard White */
+  text-align: center;
+  padding: 15px;
+  border-top: 4px solid #CD1041; /* Spirit Red top border */
+  font-size: 0.9em;
 }
 
 /* Link Styling */
 a {
-    color: #CD1041; /* Spirit Red links */
-    text-decoration: none;
-    font-weight: bold;
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
+  color: #CD1041; /* Spirit Red links */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* Buttons (Optional) */
 button {
-    background-color: #CD1041; /* Spirit Red */
-    color: #FFFFFF; /* Blizzard White */
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Button font */
+  background-color: #CD1041; /* Spirit Red */
+  color: #FFFFFF; /* Blizzard White */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Button font */
 }
 
 button:hover {
-    background-color: #A30E35; /* Darker shade of Spirit Red */
+  background-color: #A30E35; /* Darker shade of Spirit Red */
 }
-
-
-/* General Styles for Section */
-section {
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    background-color: #1A1A1A; /* Contrast against body */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Deep shadow for contrast */
-  }
-  
-  /* Section Headers */
-  section h2 {
-    font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif;
-    color: #FF3B5C; /* Brighter shade of Spirit Red */
-    text-align: center;
-    margin-bottom: 1rem;
-    font-size: 2em;
-    font-weight: bold;
-  }
-  
-  /* Paragraph and List Text */
-  section p {
-    color: #E5E5E5; /* Lighter gray for readability */
-    font-size: 1.1em;
-    margin-bottom: 1.5rem;
-  }
-  
-  section ul {
-    padding-left: 1.5rem;
-    color: #F2F2F2; /* Softer white */
-  }
-  
-  section ul li {
-    background-color: #333333; /* Darker gray for contrast */
-    margin-bottom: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    border-left: 8px solid #FF3B5C; /* Brighter Spirit Red */
-    font-size: 1.1em;
-    color: #FFFFFF; /* Ensure text contrast */
-  }
-  
-  /* About Section */
-  #about {
-    background-color: #252525; /* Slightly lighter Granite Black */
-  }
-  
-  /* Interests Section */
-  #interests {
-    background-color: #2B2B2B; /* Dark gray for differentiation */
-  }
-  
-  /* Education Section */
-  #education {
-    background-color: #252525; /* Same as About for uniformity */
-    border-left: 8px solid #FF3B5C; /* Highlight with brighter red */
-    padding-left: 15px;
-    margin-bottom: 30px;
-  }
-  
-  /* Experience Section */
-  #experience {
-    background-color: #2B2B2B; /* Darker for separation */
-    border-left: 8px solid #FF3B5C; /* Brighter Spirit Red accent */
-    padding-left: 15px;
-    margin-bottom: 30px;
-  }
-  
-  /* Skills Section */
-  #skills {
-    background-color: #252525; /* Light Granite Black for visibility */
-  }
-  
-  /* Contact Section */
-  #contact {
-    background-color: #333333; /* Dark contrast */
-    border: 2px solid #FF3B5C; /* Bright border for emphasis */
-    padding: 20px;
-  }
