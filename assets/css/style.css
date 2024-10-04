@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif; /* Body font */
     line-height: 1.6;
-    background-color: #000000; /* Granite Black */
+    background-color: #CD1041; /* Spirit Red headings */
     color: #FFFFFF; /* Blizzard White */
 }
 
@@ -13,12 +13,12 @@ header {
     color: #FFFFFF; /* Blizzard White */
     padding: 20px;
     text-align: center;
-    border-bottom: 4px solid #CD1041; /* Spirit Red underline */
+    border-bottom: 4px solid #000000; /* Granite Black */
     font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Header font */
 }
 
 header h1 {
-    color: #CD1041; /* Spirit Red text */
+    color: #FFFFFF; /* Blizzard White */
     margin: 0;
     font-size: 2.5em;
 }
