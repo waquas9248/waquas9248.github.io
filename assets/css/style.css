@@ -196,15 +196,6 @@ p {
   font-family: 'Roboto', sans-serif; /* Body font */
 }
 
-/* About Me Image */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 50%;
-  border: 4px solid #CD1041; /* Spirit Red border */
-  margin-bottom: 20px;
-}
-
 /* List Styling */
 ul {
   list-style: none;
