@@ -75,16 +75,17 @@ align-items: flex-start; /* Align items to the top */
 
 /* Sidebar and Main Containers */
 .sidebar {
-background-color: #000000; /* Black background */
-color: #FFFFFF; /* Blizzard White text */
-padding: 20px;
-width: 300px; /* Fixed width */
-position: sticky;
-top: 0; /* Makes the sidebar sticky */
-height: 100vh; /* Full viewport height */
-overflow-y: auto; /* Enable scrolling if content overflows */
-box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
-flex-shrink: 0; /* Prevents the sidebar from shrinking */
+  background-color: #000000; /* Black background */
+  color: #FFFFFF; /* Blizzard White text */
+  padding: 20px;
+  width: 300px; /* Fixed width */
+  position: sticky;
+  top: 20px; /* Adds space from the top to separate from the header */
+  margin-bottom: 20px; /* Adds space at the bottom before the footer */
+  height: calc(100vh - 40px); /* Adjust height to fit within the viewport, accounting for the top and bottom margin */
+  overflow-y: hidden; /* Remove scrolling, fit to content */
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+  flex-shrink: 0; /* Prevents the sidebar from shrinking */
 }
 
 main {
@@ -92,6 +93,7 @@ main {
   padding: 40px;
   background-color: #CD1041; /* Spirit Red headings */
   border-radius: 8px;
+  margin-top: 20px;
   margin-left: 20px; /* Space between sidebar and main content */
   font-family: 'Roboto', sans-serif; /* Body font */
   max-width: calc(100% - 320px); /* Account for sidebar width and margin */
