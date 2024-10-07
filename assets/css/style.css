@@ -70,7 +70,7 @@ align-items: flex-start; /* Align items to the top */
 }
 
 .nav-links a:hover {
-  text-decoration: underline;
+  color: #CD1041;
 }
 
 /* Sidebar and Main Containers */
@@ -217,7 +217,7 @@ font-weight: bold;
 }
 
 .author__urls-wrapper a:hover {
-text-decoration: underline;
+  color: #CD1041;
 }
 
 /* Icon styling */
@@ -363,8 +363,4 @@ a {
   text-decoration: none;
   font-weight: bold;
   font-family: 'Interstate Condensed', 'Arial Narrow', sans-serif; /* Title font */
-}
-
-a:hover {
-  text-decoration: underline;
 }
