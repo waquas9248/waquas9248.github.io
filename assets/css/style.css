@@ -181,6 +181,27 @@ background-color: #A30E35; /* Darker red on hover */
   display: flex;
   flex-direction: column;
 }
+/* add */
+
+.sidebar__links {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.author__urls {
+  flex-basis: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.author__urls li {
+  margin-bottom: 10px;
+  flex-basis: auto;
+  flex-grow: 1;
+}
 
 .author__urls-wrapper li {
   margin-bottom: 10px;
